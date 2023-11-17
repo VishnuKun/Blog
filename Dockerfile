@@ -33,7 +33,7 @@ COPY . .
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
 # fixing bugs : to be disposed later or removed
-ENV RAILS_MASTER_KEY = bYMP95fSui4u6srPr/R6YA==
+ENV RAILS_MASTER_KEY 6d830ff797d2ba2e2eeacacfaff47a60
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
 RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
 
